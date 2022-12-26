@@ -65,6 +65,54 @@ function initRestabook() {
             "opacity": dop,
         });
     });
+//   CUSTOM------------------
+AOS.init({
+    duration: 1200,
+  })
+    $(window).scroll(function(){
+        if($(window).scrollTop() >  950) {
+          $('#cut1').addClass('showx');
+          $('#cut1').removeClass('hidex');
+        }else{
+          $('#cut1').addClass('hidex');
+          $('#cut1').removeClass('showx');
+        }
+    });
+    
+    var line = $('.line');
+    
+    var tl = new TimelineLite({
+                onComplete: function(){
+                    tl.restart();
+                }
+            });
+    
+     
+    TweenLite.defaultEase = Circ.easeInOut;
+    
+    var time = 0.6;
+    var y = 10;
+    
+    tl
+        .add ( TweenMax.staggerFromTo (
+            line, time,
+                {
+                    opacity: 0,
+                    y:y,
+                },
+                {	
+                    opacity: 1,
+                    y: 0,
+                },
+            2.5 ))
+        .add ( TweenMax.staggerTo (
+            line, time,
+                {
+                    delay: time,
+                    opacity: 0,
+                    y: -y,
+                },
+            2.5 ), 1.3)
     //   Isotope------------------
     function initIsotope() {
         if ($(".gallery-items").length) {
@@ -886,18 +934,20 @@ $(document).ready(function () {
     initRestabook();
     initparallax();
 });
-
-$(window).scroll(function(){
-    if($(window).scrollTop() >  1015) {
-      $('#cut').addClass('fixed');
-      $('#cut').removeClass('end');
-      $('#cut1').addClass('showx');
-      $('#cut1').removeClass('hidex');
-    }else{
-      $('#cut').addClass('end');
-      $('#cut').removeClass('fixed');
-      $('#cut1').addClass('hidex');
-      $('#cut1').removeClass('showx');
+// Change Class - Responsive
+$(window).on('load resize', function() {
+    var win = $(this);
+    var d = $('#txt1').data('aos')
+    if (win.width() < 560) {
+  
+      $('#socials').addClass('animate__bounceInRight');
+      $('#socials').removeClass('animate__bounceInLeft');
+      $("#txt1").attr("data-aos", "fade-up");
+    } else {
+      $('#socials').removeClass('animate__bounceInRight');
+      $('#socials').addClass('animate__bounceInLeft');
+      $("#txt1").attr("data-aos", "fade");
     }
-});
+  });
+
 
