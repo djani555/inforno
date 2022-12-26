@@ -9,12 +9,16 @@
         <meta name="keywords" content=""/>
         <meta name="description" content=""/>
         <script src="https://kit.fontawesome.com/bd1ad0be6b.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!--=============== css  ===============-->
         <link type="text/css" rel="stylesheet" href="css/reset.css">
         <link type="text/css" rel="stylesheet" href="css/plugins.css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link type="text/css" rel="stylesheet" href="css/dark-style.css">
         <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== css animate  ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
     </head>
@@ -23,7 +27,7 @@
         <div class="loader-wrap">
             <div class="loader-item">
                 <div class="cd-loader-layer" data-frame="25">
-                    <!-- <div class="loader-layer"></div>// -->
+                    <div class="loader-layer"></div>
                 </div>
                 <span class="loader"></span>
             </div>
@@ -36,8 +40,8 @@
                 <!-- header-top  -->
                 <div class="header-top">
                     <div class="container">
-                        <div class="lang-wrap"><a href="#" class="act-lang">En</a><span>/</span><a href="#">It</a></div>
-                        <div class="header-top_contacts"><a href="tel:+385976513535"><span>Naruči/Rezerviraj:</span> +385 97 651 3535</a></div>
+                        <div class="lang-wrap"><a href="#" class="act-lang">Hr</a><span>/</span><a href="#">En</a></div>
+                        <div class="header-top_contacts"><a style="font-family: 'Font Awesome 5 Pro'; font-size: 18px;" href="tel:+385976513535"><span>Naruči/Rezerviraj:</span> +385 97 651 3535</a></div>
                     </div>
                 </div>
                 <!--header-top end -->
@@ -45,15 +49,16 @@
                     <div class="container">
                         <div class="header-container fl-wrap">
                             <a href="#sec1" class="logo-holder ajax custom-scroll-link"><img src="images/logoIN.png" alt=""></a>
-                            <div class="show-reserv_button show-rb"><span>Rezerviraj</span> <i class="fal fa-bookmark"></i></div>
-                            <div class="show-share-btn showshare htact"><i class="fal fa-bullhorn"></i> <span class="header-tooltip">Preporuči Nas!</span></div>
-                            
-                            <!-- nav-button-wrap-->
                             <div class="nav-button-wrap">
                                 <div class="nav-button">
                                     <span></span><span></span><span></span>
                                 </div>
                             </div>
+                            <div class="show-reserv_button show-rb"><span>Rezerviraj</span> <i class="fal fa-bookmark"></i></div>
+                            <div class="shake-bottom show-share-btn showshare htact" href="tel:+385976513535"><i class="shake-bottom fa-solid fa-phone" href="tel:+385976513535"></i> <span class="header-tooltip" style="padding: 20%; height: 185%;"><a href="tel:+385976513535" style="font-family: 'Font Awesome 5 Pro'; font-size: 13px; color: #C19D60"><span style="color: white;">Naruči/Rezerviraj:</span> +385 97 651 3535</a></span></div>
+                            
+                            <!-- nav-button-wrap-->
+                          
                             <!-- nav-button-wrap end-->
                             <!--  navigation -->
                             <div class="nav-holder main-menu">
@@ -62,7 +67,7 @@
                                         <li><a href="#sec2">O nama</a></li>
                                         <li><a href="#sec3">Meni</a></li>
                                         <li><a href="#sec4">Galerija</a></li>
-                                        <li><a href="#sec5">Recenzije</a></li>
+                                        <li><a href="#sec5">Radno Vrijeme</a></li>
                                         <li><a href="#sec6">Lokacija/Karta</a></li>
                                     </ul>
                                 </nav>
@@ -70,14 +75,7 @@
                             <!-- navigation  end -->
                         
                             <!-- share-wrapper -->
-                            <div class="share-wrapper isShare">
-                                <div class="podjeli fl-wrap">
-
-                                    <a href="http://www.facebook.com/share.php">Facebook</a>
-                                    <a href="http://www.facebook.com/share.php">Twitter</a>
-                                    <a href="http://www.facebook.com/share.php">LinkedIn</a>
-                                </div>
-                            </div>
+                            
                             <!-- share-wrapper-end -->
                         </div>
                     </div>
@@ -85,77 +83,66 @@
                 <!-- header-inner end  -->
             </header>
             <!--header end -->
-            <!-- wrapper  -->   
+            <!-- wrapper  -->	
             <div id="wrapper">
-                <!-- hero-wrap-->   
-                <div class="hero-wrap fl-wrap full-height hc-w">
-                    <!-- fw-carousel-wrap -->
-                    <div class="fw-carousel-wrap fsc-holder full-height dark-bg fl-wrap" id="sec1">
-                        <!-- fw-carousel  -->
-                        <div class="grid-carousel   fl-wrap full-height lightgallery">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide hov_zoom">
-                                        <div class="bg"  data-bg="images/pica2.jpg" data-swiper-parallax="10%"></div>
-                                        <div class="overlay"></div>
-                                        <div class="grid-carousel-title">
-                                            <h3><a class="custom-scroll-link" href="#sec2">Naša priča</a></h3>
-                                            <div class="clearfix"></div>
-                                            <h4>Zašto smo drugačiji od ostalih?</h4>
-                                            <div class="bold-separator"><span></span></div>
-                                        </div>
-                                        <div class="carousle-item-number"><span>01.</span></div>
-                                    </div>
-                                    <!-- swiper-slide end-->
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide hov_zoom">
-                                        <div class="bg"  data-bg="images/pica2.webp" data-swiper-parallax="10%"></div>
-                                        <div class="overlay"><a class="custom-scroll-link" href="#sec4"></a></div>
-                                        <div class="grid-carousel-title">
-                                            <h3><a class="custom-scroll-link" href="#sec4">Zavirite u našu kuhinju</a></h3>
-                                            <div class="clearfix"></div>
-                                            <h4>Vidi kakva jela možeš od nas očekivati!</h4>
-                                            <div class="bold-separator"><span></span></div>
-                                        </div>
-                                        <div class="carousle-item-number"><span>02.</span></div>
-                                    </div>
-                                    <!-- swiper-slide end-->
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide hov_zoom">
-                                        <div class="bg"  data-bg="images/pica.jpg" data-swiper-parallax="10%"></div>
-                                        <div class="overlay"></div>
-                                        <div class="grid-carousel-title">
-                                            <h3><a class="custom-scroll-link" href="#sec3">Istražite meni</a></h3>
-                                            <div class="clearfix"></div>
-                                            <h4>Zaviri u naš meni ili ga preuzmi na svoj uređaj!</h4>
-                                            <div class="bold-separator"><span></span></div>
-                                        </div>
-                                        <div class="carousle-item-number"><span>03.</span></div>
-                                    </div>
-                                    <!-- swiper-slide end-->
-                                    <!-- swiper-slide-->
-                                    <div class="swiper-slide hov_zoom">
-                                        <div class="bg"  data-bg="images/pica3.jpg" data-swiper-parallax="10%"></div>
-                                        <div class="overlay"></div>
-                                        <div class="grid-carousel-title">
-                                            <h3><a class="custom-scroll-link" href="#sec5">Što drugi misle o nama?</a></h3>
-                                            <div class="clearfix"></div>
-                                            <h4>Ne morate vjerovati samo nama na riječ...</h4>
-                                            <div class="bold-separator"><span></span></div>
-                                        </div>
-                                        <div class="carousle-item-number"><span>04.</span></div>
-                                    </div>
-                                    <!-- swiper-slide end-->
+                <!-- hero-wrap-->	
+                <div class="hero-wrap fl-wrap full-height">
+                    <div class="media-container">
+ 
+                        <div class="video-container" id="sec1">
+                            <video playsinline autoplay  loop muted  class="bgvid">
+                                <source src="images/pizza2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <!--  
+                            Vimeo code
+                                <div class="video-holder">
+                                    <div  class="background-vimeo" data-vim="34741214"> </div>
+                                </div> 
+                        <!--  
+                            Youtube code 
+                            
+                             <div  class="background-youtube-wrapper" data-vid="Hg5iNVSp2z8" data-mv="1"> </div> -->
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="hero-title-wrap fl-wrap">
+                        <div class="container herocont">
+                            <div class="hero-title">
+                                <h4>Dobrodošli u In Forno!</h4>
+                                <h2 class="line">Na Novoj Lokaciji Kod Bivšeg PIRATES-a!</h2>
+                                <h2 class="line">Neodoljive AUTORSKE Pizze</h2>
+                                <h2 class="line">Širok Izbor CRAFT PIVA</h2>
+                                <h2 class="line">SVJEŽE Namjernice & Original CAPUTO Brašno!</h2>
+                                <h2 class="line">NOVO: Paella & Sangria Petkom i Nedjeljom!</h2>
+                                <h2 class="line">NOVO: Burgeri & Salate</h2>
+                                <h2 class="line">Najprodavanija Pizza Na WOLT-u!</h2>
+                                <div style="margin-top: -84%;" class="swing-in-top-fwd">
+                                    <a href="menu.html" class="hero_btn hrbb" style="font-size: 18px;">Pogledajte Meni <i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <!-- fw-carousel end -->
-                        <div class="hero-slider_btn hero-slider_btn_next grc-carousel-button-next"><i class="fas fa-caret-right"></i></div>
-                        <div class="hero-slider_btn hero-slider_btn_prev grc-carousel-button-prev"><i class="fas fa-caret-left"></i></div>
                     </div>
-                    <!-- fw-carousel-wrap end --> 
-                    <!-- hero-bottom-container -->  
+                    <!--hero_promo-wrap-->
+                    <div id="soc" class="hero_promo-wrap bot-element2 animate__animated animate__backInUp animate__delay-3s animate__slow">
+                        <div class="hero_promo-button animate__animated animate__pulse animate__delay-4s animate__infinite animate__slow">
+                            <a href="#sec6" style="font-size: 25px;"><i class="fa-solid fa-map-location-dot"></i></a>
+                        </div>
+                        <div class="hero_promo-title animate__animated animate__flash animate__delay-4s animate__slower" style="font-size: 18px; font-style: normal; top: 12px; margin-left: 28px;">
+                            <h4>Nova Lokacija!</h4>
+                        </div>
+                    </div>
+                    <!--hero_promo-wrap end--> 
+                    <!--hero-social-->
+                    <div id="socials" class="hero-social animate__animated animate__bounceInLeft animate__delay-2s animate__slow" style="font-size: 25px;">
+                        <ul>
+                            <li><a href="https://www.facebook.com/pizzeria.pula/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/pizzeria.inforno" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <!--hero-social end--> 
+                    <!-- hero-bottom-container -->	
                     <div class="hero-bottom-container">
                         <div class="container">
                             <div class="scroll-down-wrap" style="scale: 2;">
@@ -167,79 +154,93 @@
                             <a href="#sec2" class="sd_btn custom-scroll-link" style="scale: 1.5;"><i class="fal fa-chevron-double-down"></i></a>
                         </div>
                     </div>
-                    <!-- hero-bottom-container -->  
+                    <!-- hero-bottom-container -->	
                     <div class="hero-dec_top"></div>
                     <div class="hero-dec_bottom"></div>
-                    <div class="hero-dec_top_right"></div>
-                    <div class="hero-dec_bottom_right"></div>
-                    <div class="brush-dec"></div>
+                    <div class="brush-dec" style="filter: blur(1px);"></div>
                 </div>
-                <!-- hero-wrap  end --> 
+                <!-- hero-wrap  end -->	
                 <!-- content  -->
                 <div class="content">
+                    
                     <section class="hidden-section big-padding" style="background-image: url(images/bg7.jpg); background-repeat: no-repeat;" data-scrollax-parent="true" id="sec2">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div id="txt1" class="col-md-6" data-aos="fade">
                                     <div class="section-title text-align_left">
                                         <h4 style=" color: #00e5c1; text-shadow: 0px 0px 6px #00201b";>Naša priča</h4>
                                         <h2 style="text-shadow: 0px 0px 10px black;">Uvijek gladni za napretkom...</h2>
                                         <div class="dots-separator fl-wrap"><span></span></div>
                                     </div>
                                     <div class="text-block ">
-                                        <p>Dobro poznati po najboljoj pizzi u regiji, već više od 7 godina za Vaš stol donosimo jedinstvene i pažljivo pripremljene delikatese. 
+                                        <p class="textphone">Dobro poznati po najboljoj pizzi u regiji, već više od 7 godina za Vaš stol donosimo jedinstvene i pažljivo pripremljene delikatese. 
                                         </p>
-                                        <p>Konstantna želja za napretkom uz naš ljubazni i profesionalni tim je ono što nas čini drugačijim!</p>
-                                        <a href="#sec3" class="btn fl-btn custom-scroll-link">Istražite Naš Meni<i class="fal fa-long-arrow-right"></i></a>
+                                        <p class="textphone">Konstantna želja za napretkom uz naš ljubazni i profesionalni tim je ono što nas čini drugačijim!</p>
+                                        <a href="#sec3" class="btn fl-btn custom-scroll-link btnmob">Istražite Naš Meni<i class="fal fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="image-collge-wrap fl-wrap">
-                                        <div class="main-iamge">
-                                            <img src="images/teamaward.jpg"   alt="">
+                                        <div class="main-iamge nomainp">
+                                            <img src="images/indoor1.jpg"   alt="">
                                         </div>
 
                                         <!--<div class="images-collage-item" style="width:65%" data-position-left="68" data-position-top="-15" data-zindex="2" data-opacity="1.0"><img src="images/all/2.jpg" alt=""></div> -->
 
-                                        <div class="images-collage-item col_par" style="width: 300px; top: -31%; z-index: 9; left: -86%; rotate: 354deg;" data-scrollax="properties: { translateY: '150px' }"><img src="images/basilleaf.webp" alt=""></div>
-                                        <div class="images-collage-item col_par" style="width: 280px; top: 61%; z-index: -1; left: -54%; rotate: 354deg;" data-scrollax="properties: { translateY: '50px'}"><img src="images/award1.png" alt=""></div>
+                                        <div class="images-collage-item col_par elm1" style="width: 300px; top: -38%; z-index: 9; left: -86%; rotate: 354deg;" data-scrollax="properties: { translateY: '150px', rotate: '-50deg' }"><img src="images/basilleaf.webp" alt=""></div>
+                                        <div class="images-collage-item col_par elm2" style="width: 280px; top: 72%; z-index: -1; left: -51%; rotate: 354deg;" data-scrollax="properties: { translateY: '50px'}"><img src="images/award1.png" alt=""></div>
 
-                                        <div id="cut" class="images-collage-item col_par cut" style="width: 800px; top: -7%; z-index: -2; left: -190%; rotate:180deg;" data-scrollax="properties: { translateX: '1000px'}"><img src="images/cutting.png" alt=""></div> 
+                                        <div id="cut1" class="images-collage-item col_par hidex elm3" style="z-index: -2; transition: 1s ease-in-out;;"><img src="images/cutting.png" alt=""></div>
 
-                                        <div id="cut1" class="images-collage-item col_par hidex" style="width: 800px; top: -7%; z-index: -2; left: -190%; rotate:180deg; transform: translateZ(0px) translateX(-241.972px);"><img src="images/cutting.png" alt=""></div>
-
-                                        <div class="images-collage-item col_par" style="width: 103%; top: -24%; z-index: 1; left: 70%;"  data-scrollax="properties: { rotate: '100deg'}"><img src="images/pizzacrop.png" alt="" ></div>
+                                        <div class="images-collage-item col_par prot" data-scrollax="properties: { rotate: '100deg'}"><img src="images/pizzarot.png" alt="" ></div>
+                                        <div class="images-collage-item col_par prot1"  data-scrollax="properties: { rotate: '-100deg'}"><img src="images/pizzarot1.png" alt="" ></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="section-dec sec-dec_top"></div>
-                            <div class="images-collage-item col_par" style="width: 185px; top: 54%; z-index: -1; left: -18%; rotate: 354deg;" data-scrollax="properties: { translateY: '-150px' }"><img src="images/tomato3.png" alt=""></div>
+                            <div class="images-collage-item col_par elm4" style="width: 185px; top: 54%; z-index: -1; left: -25%; rotate: 354deg;" data-scrollax="properties: { translateY: '-150px', rotate: '50deg'  }"><img src="images/tomato3.png" alt=""></div>
                         </div>
                     </section>
                     <!--  section end  -->
                     <!--  section-->
-                    <section data-scrollax-parent="true">
+                    
+                    <section data-scrollax-parent="true" data-bg="images/pica.jpg">
+
+                        <div class="bgline"></div>
+                        
+
+                        <div class="images-collage-item col_par obj1" data-scrollax="properties: { translateY: '40%', rotate: '-10deg' }"><img src="images/bosilj.png" alt=""></div>
+
+                        <div class="images-collage-item col_par obj2" data-scrollax="properties: { translateY: '-30%', rotate: '10deg' }"><img src="images/rucola.png" alt=""></div>
+
+                        <div class="images-collage-item col_par obj3" data-scrollax="properties: { translateY: '-30%', rotate: '10deg' }"><img src="images/garlic.png" alt=""></div>
+
+                        <div class="images-collage-item col_par obj4" data-scrollax="properties: { translateX: '-15%', translateY: '15%', rotate: '5deg' }"><img src="images/caputo.png" alt=""></div>
+
+                        <div class="images-collage-item col_par obj5" data-scrollax="properties: {  rotate: '-15deg' }"><img src="images/balta.png" alt=""></div>
+
                         <div class="container">
-                            <div class="section-title">
-                                <h2>Po čemu smo toliko poznati?</h2>
+                            <div class="section-title" data-aos="zoom-in">
+                                <h2 style="padding-bottom: 1%;">Po čemu smo toliko poznati?</h2>
                                 <h4>Tajna je u kvaliteti...</h4>
                                 <div class="dots-separator fl-wrap"><span></span></div>
                             </div>
                             <div class="cards-wrap fl-wrap">
                                 <div class="row">
                                     <!--card item -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-4" data-aos="cleft-111" data-aos-once="" data-aos-duration="700">
                                         <div class="content-inner fl-wrap">
                                             <div class="content-front">
                                                 <div class="cf-inner">
-                                                    <div class="bg "  data-bg="images/paella.jpg"></div>
+                                                    <div class="bg "  data-bg="images/Intro4.jpg"></div>
                                                     <div class="overlay"></div>
                                                     <div class="inner">
                                                         <h2>Autorske Delicije</h2>
                                                         <h4>Teško je reći ne...</h4>
                                                     </div>
-                                                    <div class="serv-num">02.</div>
+                                                    <div class="serv-num"></div>
                                                 </div>
+                                                <img src="images/click.png" class="animate__animated animate__pulse animate__infinite animate__slow corner">
                                             </div>
                                             <div class="content-back">
                                                 <div class="cf-inner">
@@ -255,7 +256,7 @@
                                     </div>
                                     <!--card item end -->
                                     <!--card item -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-4" data-aos="zoom-in-up" data-aos-once="" data-aos-duration="700">
                                         <div class="content-inner fl-wrap">
                                             <div class="content-front">
                                                 <div class="cf-inner">
@@ -265,8 +266,9 @@
                                                         <h2>Najkvalitetnije & Najsvježe Namjernice</h2>
                                                         <h4>Kvaliteta iznad svega</h4>
                                                     </div>
-                                                    <div class="serv-num">01.</div>
+                                                    <div class="serv-num"></div>
                                                 </div>
+                                                
                                             </div>
                                             <div class="content-back">
                                                 <div class="cf-inner">
@@ -282,18 +284,19 @@
                                     </div>
                                     <!--card item end -->
                                     <!--card item -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-4" data-aos="cright-111" data-aos-once="" data-aos-duration="700">
                                         <div class="content-inner fl-wrap">
                                             <div class="content-front">
                                                 <div class="cf-inner">
-                                                    <div class="bg "  data-bg="images/chefpizza.jpg"></div>
+                                                    <div class="bg "  data-bg="images/Intro.jpg"></div>
                                                     <div class="overlay"></div>
                                                     <div class="inner">
                                                         <h2>Profesionalan Tim</h2>
                                                         <h4>Uvijek vama na usluzi</h4>
                                                     </div>
-                                                    <div class="serv-num">03.</div>
+                                                    <div class="serv-num"></div>
                                                 </div>
+                                                
                                             </div>
                                             <div class="content-back">
                                                 <div class="cf-inner">
@@ -309,35 +312,34 @@
                                     </div>
                                     <!--card item end -->
                                 </div>
-                                <div class="section-dec sec-dec_top"></div>
-                                <div class="section-dec sec-dec_bottom"></div>
+                                
                             </div>
                             <!-- <a href="about.html" class="btn fl-btn border-btn">Više O Nama<i class="fal fa-long-arrow-right"></i></a> -->
-                            <div class="images-collage-item col_par" style="width:120px" data-position-left="83" data-position-top="87" data-zindex="1" data-scrollax="properties: { translateY: '150px' }"><img src="images/basil.webp" alt=""></div>
+                            
                         </div>
                         <div class="section-bg">
-                            <div class="bg"  data-bg="images/bg/dec/section-bg.png"></div>
+                            
                         </div>
                     </section>
                     <!-- section end  -->
                     <!-- section   -->
-                    <section id="sec5" style="padding-top: 40px; padding-bottom: 35px;">
+                    <section id="" style="padding-top: 40px; padding-bottom: 35px;">
                         <div class="brush-dec2 brush-dec_bottom"></div>
                         <div class="container">
-                            <div class="section-title">
+                            <div class="section-title" data-aos="fade">
                                 <h4>Ne volimo se previše hvaliti, ali...</h4>
-                                <h2>Evo šta drugi kažu o nama</h2>
+                                <h2>Evo što gosti kažu o nama</h2>
                                 <div class="dots-separator fl-wrap"><span></span></div>
                             </div>
                         </div>
 
                         <!--  section  -->
-                    <section class="parallax-section dark-bg hidden-section" data-scrollax-parent="true">
+                    <section class="parallax-section dark-bg hidden-section wides" data-scrollax-parent="true" data-aos="fade">
                         <div class="brush-dec2"></div>
                         <div class="brush-dec"></div>
-                        <div class="bg par-elem bg_tabs"  data-bg="images/oven.jpg" data-scrollax="properties: { translateY: '20%' }"></div>
+                        <div class="bg par-elem wideb" style="background-image: url(galery/Intro1.jpg); top: -153%; height: 300%;" data-scrollax="properties: { translateY: '20%' }"></div>
                         <div class="overlay"></div>
-                        <div class="container" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="container flxy" style="display: flex; justify-content: center; align-items: center;">
                             <!-- inline-facts -->
                             <div class="inline-facts-wrap">
                                 <div class="inline-facts">
@@ -379,9 +381,9 @@
                         </div>
                     </section>
                     <!--  section  end-->
-
+                
                         <div class="clearfix"></div>
-                        <div class="testimonilas-carousel-wrap fl-wrap">
+                        <div class="testimonilas-carousel-wrap">
                             <div class="tc-button tc-button-next"><i class="fas fa-caret-right"></i></div>
                             <div class="tc-button tc-button-prev"><i class="fas fa-caret-left"></i></div>
                             <div class="testimonilas-carousel">
@@ -389,78 +391,78 @@
                                     <div class="swiper-wrapper" style="padding-top: 60px;">
                                         <!--testi-item-->
                                         <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
+                                            <div class="testi-item">
                                                 <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
-                                                <div class="testimonilas-text fl-wrap">
+                                                <div class="testimonilas-text">
                                                     <h3>Ajsa</h3>
                                                     <div class="star-rating" data-starrating="5"> </div>
                                                     <p>IZVRSNA PIZZA, kako sam čuo, NAJBOLJA U PULI! Velika ponuda piva, vina i ostalih pića. Osoblje nas je poslužilo iznenađujuće brzo i bilo je uistinu ljubazno cijelu noć. Svakako probajte neku od specijalnih pizza s tartufima, boškarinom, lososom itd. Nadam se da ću ponovno posjetiti In forno. Preporučujem!</p>
-                                                    <span class="testi-number">01.</span>
+                                                    <span class="testi-number"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <!--testi-item end-->
                                         <!--testi-item-->
                                         <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
+                                            <div class="testi-item">
                                                 <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
-                                                <div class="testimonilas-text fl-wrap">
+                                                <div class="testimonilas-text">
                                                     <h3>Kristina</h3>
                                                     <div class="star-rating" data-starrating="5"> </div>
                                                     <p>Apsolutno najbolja pizza u Puli! Sastojci su kvalitetni, najbolja šalša. NARUČUJEM ISTRIANU I UVIJEK SE IZNOVA ODUŠEVIM! Sve pohvale osoblju - brzi, uslužni, ljubazni. Uvijek se vraćamo!</p>
-                                                    <span class="testi-number">02.</span>
+                                                    <span class="testi-number"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <!--testi-item end-->
                                         <!--testi-item-->
                                         <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
+                                            <div class="testi-item">
                                                 <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
-                                                <div class="testimonilas-text fl-wrap">
+                                                <div class="testimonilas-text">
                                                     <h3>Jessi & Marek</h3>
                                                     <div class="star-rating" data-starrating="5"> </div>
                                                     <p>Svakako idite! Tako nevjerojatno uslužni ljudi, a i hrana je bila izvrsna. PIZZA S ORIGINALNIM CAPUTO BRAŠNOM!. Ostavili smo ključeve u kombiju i pola ekipe nam je pokušalo pomoći otvoriti auto. Čak i ako na kraju nismo uspjeli, bili smo beskrajno zahvalni na tolikoj volji da pomognu! Hvala i samo tako nastavite!</p>
-                                                    <span class="testi-number">04.</span>
+                                                    <span class="testi-number"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <!--testi-item end-->
                                         <!--testi-item-->
                                         <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
+                                            <div class="testi-item">
                                                 <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
-                                                <div class="testimonilas-text fl-wrap">
+                                                <div class="testimonilas-text">
                                                     <h3>Achim</h3>
                                                     <div class="star-rating" data-starrating="5"> </div>
                                                     <p>Prije na karting stazi, sada na velikom kružnom toku u bivšem Pirates-u. Hrana je bila ukusna i svakako PREPORUČUJEM!. Veliki vanjski prostor s igralištima za djecu.</p>
-                                                    <span class="testi-number">06.</span>
+                                                    <span class="testi-number"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <!--testi-item end-->
                                         <!--testi-item-->
                                         <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
+                                            <div class="testi-item">
                                                 <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
-                                                <div class="testimonilas-text fl-wrap">
+                                                <div class="testimonilas-text">
                                                     <h3>Irina</h3>
                                                     <div class="star-rating" data-starrating="5"> </div>
                                                     <p>Ukusan obrok. Dobra cijena. Ljubazno osoblje. NAŽALOST, ovo smo mjesto otkrili tek zadnju noć našeg boravka, inače bismo sigurno ponovno došli!.</p>
-                                                    <span class="testi-number">05.</span>
+                                                    <span class="testi-number"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <!--testi-item end-->
                                         <!--testi-item-->
                                         <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
+                                            <div class="testi-item">
                                                 <div class="testi-avatar"><img src="images/avatar/1.jpg" alt=""></div>
-                                                <div class="testimonilas-text fl-wrap">
+                                                <div class="testimonilas-text">
                                                     <h3>Tamara</h3>
                                                     <div class="star-rating" data-starrating="5"> </div>
                                                     <p>Jako su mi se svidjeli PLJUKANCI S PRŠUTOM i rukolom! Fino crno domaće vino. Vrlo povoljne cijene! Nekoliko vrlo lijepih palmi i velika terasa u hladu. Čak i igralište za djecu s "gusarskim" čamcem!</p>
-                                                    <span class="testi-number">03.</span>
+                                                    <span class="testi-number"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -473,32 +475,33 @@
                     </section>
                     <!-- section end  -->
                     <!--  section  -->
-                    <section class="parallax-section dark-bg hidden-section" data-scrollax-parent="true" id="sec3">
+                    <section id="sec3" class="parallax-section dark-bg hidden-section" data-scrollax-parent="true">
                         <div class="brush-dec2"></div>
                         <div class="brush-dec"></div>
-                        <div class="bg par-elem bg_tabs"  data-bg="images/bg.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        <div class="bg par-elem bg_tabs" style="filter: blur(4px);"  data-bg="images/ovend1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
                         <div class="cd-tabs-layer" data-frame="10">
                             <div class="tabs-layer"></div>
                         </div>
-                        <div class="overlay op7"></div>
-                        <div class="container">
+                        <div class="overlay op7"> <div class="bgline2"></div> <div class="bgline3"></div> </div>
+                        <div class="container" data-aos="fade">
                             <div class="section-title">
-                                <h4>Special menu offers.</h4>
-                                <h2>Discover Or Menu</h2>
+                                <h4>Naši specijaliteti.</h4>
+                                <h2>Zaviri U Naš Meni</h2>
                                 <div class="dots-separator fl-wrap"><span></span></div>
                             </div>
                             <!--  hero-menu_header  end-->
                             <div class="hero-menu tabs-act fl-wrap">
                                 <div class="row">
                                     <!--  hero-menu_header-->
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 nobg" style="border-radius: 5px; background-color: #040404e6;">
                                         <div class="hero-menu_header fl-wrap">
                                             <ul class="tabs-menu     no-list-style change_bg">
-                                                <li class="current"><a href="#tab-1" data-bgtab="images/bg/1.jpg"><span>01.</span>Main dishes</a></li>
-                                                <li><a href="#tab-2" data-bgtab="images/bg/1.jpg"><span>02.</span>Starter</a></li>
-                                                <li><a href="#tab-3" data-bgtab="images/bg/1.jpg"><span>03.</span>Desserts</a></li>
-                                                <li><a href="#tab-4" data-bgtab="images/bg/1.jpg"><span>04.</span>Sea Food</a></li>
-                                                <li><a href="#tab-5" data-bgtab="images/bg/1.jpg"><span>05.</span>Drinks</a></li>
+                                                <li class="current"><a href="#tab-1" data-bgtab="images/ovend1.jpg"><span></span>Autorske Pizze</a></li>
+                                                <li><a href="#tab-2" data-bgtab="images/pizzad.jpg"><span></span>Pizze</a></li>
+                                                <li><a href="#tab-3" data-bgtab="images/burger1.jpg"><span></span>Burgeri</a></li>
+                                                <li><a href="#tab-4" data-bgtab="galery/focca.jpg"><span></span>Focaccia</a></li>
+                                                <li><a href="#tab-5" data-bgtab="galery/salad1.jpg"><span></span>Pasta</a></li>
+                                                <li><a href="#tab-6" data-bgtab="galery/salad.jpg"><span></span>Salate</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -513,50 +516,99 @@
                                                         <!-- header-menu-item-->
                                                         <div class="hero-menu-item">
                                                             <div class="hero-menu-item-title fl-wrap">
-                                                                <h6><span>01.</span>Soft shell crab</h6>
+                                                                <h6><span>01.</span>Salmone</h6>
                                                                 <div class="hmi-dec"></div>
-                                                                <span class="hero-menu-item-price">$29</span>
+                                                                <span class="hero-menu-item-price">80kn / 10.62€</span>
                                                             </div>
                                                             <div class="hero-menu-item-details">
-                                                                <p>Granny help you treat yourself with a different meal everyday</p>
+                                                                <p>pelati, mozzarella, dimljeni losos, brie, cherry rajčica, rukola</p>
                                                             </div>
                                                         </div>
                                                         <!-- header-menu-item end-->
                                                         <!-- header-menu-item-->
                                                         <div class="hero-menu-item">
                                                             <div class="hero-menu-item-title fl-wrap">
-                                                                <h6><span>02.</span>Miso chicken</h6>
+                                                                <h6><span>02.</span>Bresaola</h6>
                                                                 <div class="hmi-dec"></div>
-                                                                <span class="hero-menu-item-price">$19</span>
+                                                                <span class="hero-menu-item-price">84kn / 11.15€</span>
                                                             </div>
                                                             <div class="hero-menu-item-details">
-                                                                <p>Etiam tempus felis eros, id lobortis turpis</p>
+                                                                <p>pelati, mozzarella, taleggio, bresola(goveđi but), rukola, grana padano</p>
                                                             </div>
                                                         </div>
                                                         <!-- header-menu-item end-->
                                                         <!-- header-menu-item-->
                                                         <div class="hero-menu-item">
                                                             <div class="hero-menu-item-title fl-wrap">
-                                                                <h6><span>03.</span>Fish pie</h6>
+                                                                <h6><span>03.</span>Cavallo</h6>
                                                                 <div class="hmi-dec"></div>
-                                                                <span class="hero-menu-item-price">$12</span>
+                                                                <span class="hero-menu-item-price">88kn / 11.68€</span>
                                                             </div>
                                                             <div class="hero-menu-item-details">
-                                                                <p>usce tempus tempus maximus volutpat</p>
+                                                                <p>pelati. mozzarella, sfilacci od konjetine, pinole, grana padano, cherry rajčica, rukola</p>
                                                             </div>
                                                         </div>
                                                         <!-- header-menu-item end-->
                                                         <!-- header-menu-item-->
                                                         <div class="hero-menu-item">
                                                             <div class="hero-menu-item-title fl-wrap">
-                                                                <h6><span>04.</span>Salmon riverland</h6>
+                                                                <h6><span>04.</span>Negra</h6>
                                                                 <div class="hmi-dec"></div>
-                                                                <span class="hero-menu-item-price">$105</span>
+                                                                <span class="hero-menu-item-price">88kn / 11.68€</span>
                                                             </div>
                                                             <div class="hero-menu-item-details">
-                                                                <p>Fusce a tellus tellus. Praesent neque arcu, efficitur sit amet</p>
+                                                                <p>pelati, mozzarella, artičoke, mrkva, lardo, grana padano, suhe šljive, rukola, bosiljak</p>
                                                             </div>
                                                         </div>
+                                                        <!-- header-menu-item end-->
+                                                        <!-- header-menu-item-->
+                                                        <div class="hero-menu-item">
+                                                            <div class="hero-menu-item-title fl-wrap">
+                                                                <h6><span>05.</span>Tartufata</h6>
+                                                                <div class="hmi-dec"></div>
+                                                                <span class="hero-menu-item-price">90kn / 11.95€</span>
+                                                            </div>
+                                                            <div class="hero-menu-item-details">
+                                                                <p>pelati, mozzarella, sir sa tartufima, pršut, cherry rajčica, rukola, bosiljak</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- header-menu-item end-->
+                                                        <!-- header-menu-item-->
+                                                        <div class="hero-menu-item">
+                                                            <div class="hero-menu-item-title fl-wrap">
+                                                                <h6><span>06.</span>Boškarin</h6>
+                                                                <div class="hmi-dec"></div>
+                                                                <span class="hero-menu-item-price">94kn / 12.48€</span>
+                                                            </div>
+                                                            <div class="hero-menu-item-details">
+                                                                <p>pelati, mozzarella, carpaccio od boškarina, skuta, grana padano, cherry rajčica, rukola, bosiljak</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- header-menu-item end-->
+                                                        <!-- header-menu-item-->
+                                                        <div class="hero-menu-item">
+                                                            <div class="hero-menu-item-title fl-wrap">
+                                                                <h6><span>07.</span>Tuna Alla Carpaccio</h6>
+                                                                <div class="hmi-dec"></div>
+                                                                <span class="hero-menu-item-price">94kn / 12.48€</span>
+                                                            </div>
+                                                            <div class="hero-menu-item-details">
+                                                                <p>pelati, mozzarella, carpaccio od tune, pesto od maslina, suha rajčica, bosiljak</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- header-menu-item end-->
+                                                        <!-- header-menu-item-->
+                                                        <div class="hero-menu-item">
+                                                            <div class="hero-menu-item-title fl-wrap">
+                                                                <h6><span>08.</span>Terra Istriana</h6>
+                                                                <div class="hmi-dec"></div>
+                                                                <span class="hero-menu-item-price">96kn / 12.74€</span>
+                                                            </div>
+                                                            <div class="hero-menu-item-details">
+                                                                <p>pelati, mozzarella, skuta, kobasica od boškarina u malvaziji, rukola, cherry rajčica</p>
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="animate__animated animate__flash animate__delay-4s animate__repeat-2 animate__slow ostatak" style="color: white; text-transform: uppercase; font-size: 15px;">Za ostatak ponude pogledajte cijeli meni!</h6>
                                                         <!-- header-menu-item end-->
                                                     </div>
                                                     <!--tab end -->
@@ -566,50 +618,99 @@
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>01.</span>Fried Potatoes</h6>
+                                                                    <h6><span>01.</span>Margherita</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$29</span>
+                                                                    <span class="hero-menu-item-price">46kn / 6.10€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Granny help you treat yourself with a different meal everyday</p>
+                                                                    <p>pelati, mozzarella, bosiljak</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>02.</span>Doner Burger</h6>
+                                                                    <h6><span>02.</span>Prosciutto Cotto</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$19</span>
+                                                                    <span class="hero-menu-item-price">54kn / 7.17€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Etiam tempus felis eros, id lobortis turpis</p>
+                                                                    <p>pelati, mozzarella, šunka, bosiljak</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>03.</span>Steak Filet</h6>
+                                                                    <h6><span>03.</span>Fungi</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$12</span>
+                                                                    <span class="hero-menu-item-price">50kn / 6,64€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>usce tempus tempus maximus volutpat</p>
+                                                                    <p>pelati, mozzarella, gljive, bosiljak</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>04.</span>Cayenne Shrimp</h6>
+                                                                    <h6><span>04.</span>Capricciosa</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$37</span>
+                                                                    <span class="hero-menu-item-price">58kn / 7,70€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>usce tempus tempus maximus volutpat</p>
+                                                                    <p>pelati, mozzarella, šunka, gljive, bosiljak</p>
                                                                 </div>
                                                             </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>05.</span>Salami</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">52kn / 6.90€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>pelati, mozzarella, salami, bosiljak</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>06.</span>Vegetariana</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">56kn / 7,43€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>pelati, mozzarella, gljive, bosiljak, artičoke, mrkva, paprika, kukuruz, masline</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>07.</span>Quattro Formaggi</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">62kn / 8.23€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>pelati, mozzarella, gorgonzola, brie, grana padano, maslina, bosiljak</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>08.</span>Mexicana</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">64kn / 8.49€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>pelati, gauda, šunka, kulen, kukuruz, luk, grah, ljuti feferoni</p>
+                                                                </div>
+                                                            </div>
+                                                            <h6 class="animate__animated animate__flash animate__delay-4s animate__repeat-2 animate__slow ostatak" style="color: white; text-transform: uppercase; font-size: 15px;">Za ostatak ponude pogledajte cijeli meni!</h6>
                                                             <!-- header-menu-item end-->
                                                         </div>
                                                     </div>
@@ -620,48 +721,48 @@
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>01.</span>Soft shell crab</h6>
+                                                                    <h6><span>01.</span>Classic + Pomes</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$29</span>
+                                                                    <span class="hero-menu-item-price">54kn / 7.17€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Granny help you treat yourself with a different meal everyday</p>
+                                                                    <p>burger od junetine, bbq umak, salata, pomidor, kiseli krastavac</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>02.</span>Tarte Tatin</h6>
+                                                                    <h6><span>02.</span>Cheese + Pomes</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$25</span>
+                                                                    <span class="hero-menu-item-price">62kn / 8.23€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Etiam tempus felis eros, id lobortis turpis</p>
+                                                                    <p>burger od junetine, cheedar sir, paneta, bbq umak, salata, pomidor, kiseli krastavac</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>03.</span>Creme Brulee</h6>
+                                                                    <h6><span>03.</span>Piccante + Pomes</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$64</span>
+                                                                    <span class="hero-menu-item-price">64kn / 8.49€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>usce tempus tempus maximus volutpat</p>
+                                                                    <p>burger od junetine, pikantna salama, panceta, pikantni umak, salata, pomidor, kiseli krastavac</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>04.</span>Lemon Meringue</h6>
+                                                                    <h6><span>04.</span>Vege + Pomes</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$12</span>
+                                                                    <span class="hero-menu-item-price">56kn / 7.43€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>usce tempus tempus maximus volutpat</p>
+                                                                    <p>burger od mix povrća, vege majoneza, salata, pomidor</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
@@ -674,78 +775,216 @@
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>01.</span> Lobster with melted mozarella</h6>
+                                                                    <h6><span>01.</span> Oliva</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$156</span>
+                                                                    <span class="hero-menu-item-price">18kn / 2.39€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Granny help you treat yourself with a different meal everyday</p>
+                                                                    <p>maslinovo ulje</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>02.</span> Butterfly fried shrimps platter</h6>
+                                                                    <h6><span>02.</span> Grana Padano</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$98</span>
+                                                                    <span class="hero-menu-item-price">26kn / 3.45€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Etiam tempus felis eros, id lobortis turpis</p>
+                                                                    <p>masline, grana padano, bosiljak, maslinovo ulje</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>03.</span> Formaggio</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">38kn / 5.04€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>mozzarella, umak 4 sira, šunka, rajčica</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>04.</span> Panceta</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">34kn / 4.51€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>mozzarella, panceta, umak od češnjaka</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>05.</span> Tonno</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">34kn / 4.51€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>mozzarella, tunjevina, kukuruz, umak od maslina</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>06.</span> Prosciutto</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">40kn / 5.31€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>mozzarella, pršut, grana padano, umak od tartufa</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>07.</span> Salamin</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">42kn / 5.57€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>kiselo vrhnje, losos, rukola, cherry rajčica</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                         </div>
                                                     </div>
                                                     <!--tab end -->
-                                                    <!--tab 5-->
-                                                    <div class="tab">
+                                                     <!--tab 5-->
+                                                     <div class="tab">
                                                         <div id="tab-5" class="tab-content">
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>01.</span>Kiwi Coctail</h6>
+                                                                    <h6><span>01.</span> Gnocchi 4 Formaggi</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$12</span>
+                                                                    <span class="hero-menu-item-price">75kn / 9.96€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Granny help you treat yourself with a different meal everyday</p>
+                                                                    <p>taleggio, brie, grana padano, gorgonzola</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item" style="padding-bottom: 3%;">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>02.</span> Pljukanci Pršut-Rukola</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">70kn / 9.29€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p></p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item" style="padding-bottom: 3%;">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>03.</span> Tagliatelle Salmone</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">78kn / 10.35€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p></p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item" style="padding-bottom: 3%;">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>04.</span> Penne Al Pomodoro</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">55kn / 7.30€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p></p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>02.</span>Summer Beer</h6>
+                                                                    <h6><span>05.</span> Tagliatelle Bolognese</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$21</span>
+                                                                    <span class="hero-menu-item-price">68kn / 9.03€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>Etiam tempus felis eros, id lobortis turpis</p>
+                                                                    <p>juneće meso</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                        </div>
+                                                    </div>
+                                                    <!--tab end -->
+                                                     <!--tab 6-->
+                                                     <div class="tab">
+                                                        <div id="tab-6" class="tab-content">
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>01.</span> Bresaola</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">60kn / 7.96€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>bresaola, rukola, cherry rajčica, grana padano</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>03.</span>Red Mojitos</h6>
+                                                                    <h6><span>02.</span> Caprese</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$17</span>
+                                                                    <span class="hero-menu-item-price">58kn / 7.70€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>usce tempus tempus maximus volutpat</p>
+                                                                    <p>rukola, zelena salata, masline, ulje od bosiljka, cherry rajčica, mozzarella di bufala</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
                                                             <!-- header-menu-item-->
                                                             <div class="hero-menu-item">
                                                                 <div class="hero-menu-item-title fl-wrap">
-                                                                    <h6><span>04.</span>Cabernet Sauvignon</h6>
+                                                                    <h6><span>03.</span> Piletina</h6>
                                                                     <div class="hmi-dec"></div>
-                                                                    <span class="hero-menu-item-price">$40</span>
+                                                                    <span class="hero-menu-item-price">56kn / 7.43€</span>
                                                                 </div>
                                                                 <div class="hero-menu-item-details">
-                                                                    <p>usce tempus tempus maximus volutpat</p>
+                                                                    <p>rukola, tuna, zelena salata, kukuruz, ljubičasti luk, kapari</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>04.</span> Tuna</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">60kn / 7.96€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>rukola, tuna, zelena salata, kukuruz, ljubičasti luk, kapari</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- header-menu-item end-->
+                                                            <!-- header-menu-item-->
+                                                            <div class="hero-menu-item">
+                                                                <div class="hero-menu-item-title fl-wrap">
+                                                                    <h6><span>05.</span> Vege</h6>
+                                                                    <div class="hmi-dec"></div>
+                                                                    <span class="hero-menu-item-price">52kn / 6.90€</span>
+                                                                </div>
+                                                                <div class="hero-menu-item-details">
+                                                                    <p>kus-kus, rucola, cherry rajčica, patliđan, tikvica, paprika</p>
                                                                 </div>
                                                             </div>
                                                             <!-- header-menu-item end-->
@@ -759,133 +998,23 @@
                                     </div>
                                     <!--  hero-menu_content end  -->
                                     <div class="clearfix"></div>
-                                    <a href="menu.html" class="hero_btn" style="margin-left:30px;">View Full Menu <i class="fal fa-long-arrow-right"></i></a>
-                                    <a href="#" class="pdf-link">Dowload PDF</a>
+                                    <a href="menu.html" class="hero_btn mni" style="margin-left:30px;" data-aos="gg-anim3">Cijeli Meni<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="animate__animated animate__pulse animate__infinite animate__slower pdf-link">Preuzmi PDF</a>
                                 </div>
                             </div>
                             <!--  hero-menu  end-->
                         </div>
                     </section>
                     <!--  section  end-->
-                    
-                    <!--  section    -->
-
-                    <!--OurTeam -->
-                    
-                    <!--  section end  -->
-                    <!--Counter -->
-                    <!--  section  -->
-                    <section class="hidden-section" data-scrollax-parent="true" id="sec4">
-                        <div class="container">
-                            <div class="section-title">
-                                <h4>Enjoy your time in our restaurant with pleasure.</h4>
-                                <h2> Our Galley</h2>
-                                <div class="dots-separator fl-wrap"><span></span></div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="gallery_filter-button btn">Show Filters <i class="fal fa-long-arrow-down"></i></div>
-                            <!-- gallery-filters -->
-                            <div class="gallery-filters gth">
-                                <a href="#" class="gallery-filter gallery-filter-active"  data-filter="*"><span>01.</span>All Images</a>
-                                <a href="#" class="gallery-filter " data-filter=".dishes"><span>02.</span>Dishes</a>
-                                <a href="#" class="gallery-filter" data-filter=".resta_img"><span>03.</span>Restaurant</a>
-                                <a href="#" class="gallery-filter" data-filter=".events"><span>04.</span>Events</a>
-                                <a href="#" class="gallery-filter" data-filter=".video_links"><span>05.</span>Video</a>
-                            </div>
-                            <!-- gallery-filters end-->
-                            <!-- gallery start -->
-                            <div class="gallery-items min-pad  lightgallery three-column fl-wrap" style="margin-bottom:50px;">
-                                <!-- gallery-item-->
-                                <div class="gallery-item dishes">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="images/all/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item resta_img events">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="images/all/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item gallery-item-second dishes">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="images/all/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item resta_img events">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="images/all/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item resta_img video_links">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="https://vimeo.com/10322316" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item dishes">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="images/all/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item resta_img events video_links">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item resta_img dishes">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="images/all/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->
-                                <!-- gallery-item-->
-                                <div class="gallery-item resta_img dishes">
-                                    <div class="grid-item-holder hov_zoom">
-                                        <a href="images/all/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                        <img  src="images/all/1.jpg"    alt="">
-                                    </div>
-                                </div>
-                                <!-- gallery-item end-->								
-                            </div>
-                            <!-- gallery end -->
-                            <div class="clearfix"></div>
-                            <div class="bold-separator bold-separator_dark"><span></span></div>
-                            <div class="clearfix"></div>
-                            <a href="#" class="btn show-rb">Book table now<i class="fal fa-long-arrow-right"></i></a>
-                        </div>
-                    </section>
-                    <!--  section end  -->
                     <!-- section   -->
-                    <section class="column-section no-padding hidden-section" data-scrollax-parent="true">
+                    <section id="sec5" class="column-section no-padding hidden-section" data-scrollax-parent="true">
                         <div class="column-wrap-bg left-wrap">
-                            <div class="bg par-elem "  data-bg="images/oven.jpg" data-scrollax="properties: { translateY: '25%' }"></div>
+                            <div class="bg par-elem "  data-bg="images/wolt1.jpg" data-scrollax="properties: { translateY: '25%' }"></div>
                             <div class="overlay"></div>
-                            <div class="quote-box">
-                                <i class="fal fa-quote-right"></i>
-                                <p>"U In Fornu svakom jelu dajemo nešto drugačije i posebno. Krušna peć radi punim pogonom svaki dan. Gosti, koji nam dolaze iz raznih krajeva, obožavaju naše autorske pizze."</p>
-                                <div class="signature"><img src="images/signature.png" alt=""></div>
-                                <h4>M.Marini - Vlasnik</h4>
+                            <div class="column-wrap-bg-text">
+                                <h3 class="bluew">Wolt Dostava</h3>
+                                <h4>Jednostavno naručite vaša najdraža jela od sada i na Wolt-u!</h4>
+                                <a href="https://wolt.com/en/hrv/pula/restaurant/pizzeria-in-forno" class="btn ajax shake-bottom sweepright">Naruči Online! <i class="fal fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="column-section-wrap dark-bg" >
@@ -905,6 +1034,7 @@
                                                     23:00
                                                 </div>
                                             </div>
+                                            <div class="bold-separator nope"><span></span></div>
                                             <div class="col-md-6">
                                                 <h3><b>- Priprema Paelle & Sangrie -</b><br><br>Petak i Nedjelja</h3>
                                                 <div class="hours">
@@ -917,7 +1047,7 @@
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="bold-separator"><span></span></div>
-                                    <div class="big-number"><a href="tel:+385976513535">+385 97 651 3535</a></div>
+                                    <div class="big-number shake-bottom"><a href="tel:+385976513535">+385 97 651 3535</a></div>
                                 </div>
                             </div>
                             <div class="illustration_bg">
@@ -926,78 +1056,181 @@
                         </div>
                     </section>
                     <!-- section end -->
-                    <!-- section   -->
-                    <section class="column-section no-padding hidden-section" data-scrollax-parent="true">
-                        <div class="column-wrap-bg right-wrap">
-                            <div class="bg par-elem "  data-bg="images/wolt.jpg" data-scrollax="properties: { translateY: '25%' }"></div>
-                            <div class="overlay"></div>
-                            <div class="column-wrap-bg-text">
-                                <h3>Wolt Dostava</h3>
-                                <h4>Jednostavno naručite vaša najdraža jela od sada i na Wolt-u!</h4>
-                                <a href="https://wolt.com/en/hrv/pula/restaurant/pizzeria-in-forno" class="btn  ajax">Naruči! <i class="fal fa-long-arrow-right"></i></a>
+                    <!--  section    -->
+
+                    <!--OurTeam -->
+                    
+                    <!--  section end  -->
+                    <!--Counter -->
+                    <!--  section  -->
+                    <section class="hidden-section" data-scrollax-parent="true" id="sec4">
+                        <div class="container" data-aos="fade-up">
+                            <div class="section-title">
+                                <h4>Zavirite i pogledajte kako je to kod nas</h4>
+                                <h2> Galerija</h2>
+                                <div class="dots-separator fl-wrap"><span></span></div>
                             </div>
-                        </div>
-                        <div class="column-section-wrap left-column-section dark-bg" >
-                            <div class="container"  >
-                                <div class="column-text">
-                                    <div class="section-title">
-                                        <h4>Kod nas nikad nije dosadno</h4>
-                                        <h2>Nadolazeća Događanja</h2>
-                                        <div class="dots-separator fl-wrap"><span></span></div>
+                            <div class="clearfix"></div>
+                            <div class="gallery_filter-button btn">Filteri <i class="fal fa-long-arrow-down"></i></div>
+                            <!-- gallery-filters -->
+                            <div class="gallery-filters gth">
+                                <a href="#" class="gallery-filter gallery-filter-active"  data-filter="*"><span></span>Sve</a>
+                                <a href="#" class="gallery-filter " data-filter=".dishes"><span></span>Jela</a>
+                                <a href="#" class="gallery-filter" data-filter=".resta_img"><span></span>Restoran</a>
+                                
+                                <a href="#" class="gallery-filter" data-filter=".video_links"><span></span>Video</a>
+                            </div>
+                            <!-- gallery-filters end-->
+                            <!-- gallery start -->
+                            <div class="gallery-items min-pad  lightgallery two-column fl-wrap" style="margin-bottom:50px;">
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/pizza5.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/pizza5.jpg"    alt="">
                                     </div>
-                                    <!-- events-carousel-wrap -->
-                                    <div class="events-carousel-wrap fl-wrap">
-                                        <div class="events-carousel fl-wrap">
-                                            <div class="swiper-container">
-                                                <div class="swiper-wrapper">
-                                                    <!-- swiper-slide -->
-                                                    <div class="swiper-slide">
-                                                        <div class="event-carousel-item">
-                                                            <h4>Original Paella & Sangria</h4>
-                                                            <span class="event-date">Svakog Petka i Nedjelje!</span>
-                                                            <p>Auténtica paella española svakog petka i nedjelje od 13h do 20h. Birajte između mesne, vege ili paelle sa morskim plodovima.</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- swiper-slide end -->
-                                                    <!-- swiper-slide -->
-                                                    <div class="swiper-slide">
-                                                        <div class="event-carousel-item">
-                                                            <h4>Wine and Steak Day</h4>
-                                                            <span class="event-date">19 June 2020</span>
-                                                            <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit   gravida. </p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- swiper-slide end -->
-                                                    <!-- swiper-slide -->
-                                                    <div class="swiper-slide">
-                                                        <div class="event-carousel-item">
-                                                            <h4>Freedom Day Celebration</h4>
-                                                            <span class="event-date">14 October 2020</span>
-                                                            <p>Lorem Ipsum generators on the Internet king this the first true generator laudantium totam aperiam. </p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- swiper-slide end -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ec-button ec-button-prev"><i class="fas fa-caret-left"></i></div>
-                                        <div class="ec-button ec-button-next"><i class="fas fa-caret-right"></i></div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="bold-separator"><span></span></div>
-                                    <!-- events-carousel-wrap end -->
-                                    <a href="#" class="hero_btn no-align show-rb">Book Table Now<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/pizza6.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/pizza6.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/focca.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/focca.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item gallery-item-second dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/burger1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/burger1.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/pizza2.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/pizza2.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/pizza4.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/pizza4.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img events">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/Intro2.JPG" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/Intro2.JPG"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/pizza1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/pizza1.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img events">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/Intro6.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/Intro6.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img video_links">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/Intro.jpg" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
+                                        <img  src="galery/Intro.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/Intro1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/Intro1.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/Intro3.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/Intro3.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                
+                                <!-- gallery-item-->
+                                <div class="gallery-item resta_img dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/oven1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/oven1.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/oven.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/oven.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="images/wolt.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="images/wolt.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item dishes">
+                                    <div class="grid-item-holder hov_zoom">
+                                        <a href="galery/indoor1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                        <img  src="galery/indoor1.jpg"    alt="">
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->						
                             </div>
-                            <div class="illustration_bg">
-                                <div class="bg"  data-bg="images/bg/dec/6.png"></div>
-                            </div>
+                            <!-- gallery end -->
+                            <div class="clearfix"></div>
+                            <div class="bold-separator bold-separator_dark"><span></span></div>
+                            <div class="clearfix"></div>
+                            <a href="#" class="btn show-rb">Rezerviraj<i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </section>
+                    <!--  section end  -->
+                    
+                    <!-- section   -->
+                    
+                    
                     <!-- section end  -->
                     
                     <!--  section  -->
                     <section class=" no-padding dark-bg hidden-section"  id="sec6">
+                        <div class="mapinfo" data-aos="fade">Gdje se nalazimo?</div>
                         <div class="map-container">
                             <div id="singleMap"></div>
 							<div class="scrollContorl"></div>
@@ -1005,7 +1238,7 @@
                         <!-- map-view-wrap -->
                         <div class="map-view-wrap">
                             <div class="container">
-                                <div class="map-view-wrap_item">
+                                <div class="map-view-wrap_item animate__animated animate__pulse animate__infinite animate__slower" data-aos="fade-up">
                                     <div class="contact-details">
                                         <h4>Kontakt i Adresa</h4>
                                         <ul>
@@ -1031,7 +1264,7 @@
                     <div class="container">
                         <div class="footer-top fl-wrap">
                             <a href="index.html" class="footer-logo"><img src="images/logoIN.png" alt=""></a>
-                            <div class="lang-wrap"><a href="#" class="act-lang">En</a><span>/</span><a href="#">Fr</a></div>
+                            <div class="lang-wrap"><a href="#" class="act-lang">Hr</a><span>/</span><a href="#">En</a></div>
                             <div class="footer-social">
                                 <span class="footer-social-title">Zapratite nas :</span>
                                 <ul>
@@ -1051,7 +1284,7 @@
                                         <div class="footer-widget-title">O nama</div>
                                         <div class="footer-widget-content">
                                             <p>Više od 7 godina za Vaš stol donosimo jedinstvene i pažljivo pripremljene delikatese.<br>Konstantna želja za napretkom uz naš ljubazni i profesionalni tim je ono što nas čini drugačijim! Dođite nam i uvjerite se sami! </p>
-                                            <a href="about.html" class="footer-widget-content-link">Read more</a>
+                                            <a href="#sec2" class="footer-widget-content-link">Više</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1068,7 +1301,7 @@
                                                     <li><span>Adresa: </span><a href="https://g.page/pizzeria-pula?share">Stisni za Google Maps!</a></li>
                                                 </ul>
                                             </div>
-                                            <a href="contacts.html" class="footer-widget-content-link">Get in Touch</a>
+                                            <a href="" class="footer-widget-content-link">Kontaktiraj Nas</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1115,8 +1348,8 @@
                         <div class="close-reservation-modal crm"><i class="fal fa-times"></i></div>
                         <div class="reservation-bg"></div>
                         <div class="section-title">
-                            <h4>Don't forget to book a table</h4>
-                            <h2>Table Reservations</h2>
+                            <h4>Još samo nekoliko detalja</h4>
+                            <h2>Rezervacija Stola</h2>
                             <div class="dots-separator fl-wrap"><span></span></div>
                         </div>
                         <div class="reservation-wrap">
@@ -1125,37 +1358,37 @@
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <input type="text" name="name" id="name" placeholder="Your Name *" value=""/>
+                                            <input type="text" name="name" id="name" placeholder="Vaše Ime *" value=""/>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text"  name="email" id="email" placeholder="Email Address *" value=""/>
+                                            <input type="text"  name="email" id="email" placeholder="Vaše Prezime *" value=""/>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text"  name="phone" id="phone" placeholder="Phone *" value=""/>
+                                            <input type="text"  name="phone" id="phone" placeholder="Tel *" value=""/>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="fl-wrap">
                                                 <select name="numperson" id="persons" data-placeholder="Persons" class="chosen-select no-search-select">
-                                                    <option data-display="Persons">Any</option>
-                                                    <option value="1">1 Person</option>
-                                                    <option value="2">2 People</option>
-                                                    <option value="3">3 People</option>
-                                                    <option value="4">4 People</option>
-                                                    <option value="5">5 People</option>
-                                                    <option value="Banquet">Banquet</option>
+                                                    <option data-display="Osobe"></option>
+                                                    <option value="1">1 Osoba</option>
+                                                    <option value="2">2 Osobe</option>
+                                                    <option value="3">3 Osobe</option>
+                                                    <option value="4">4 Osobe</option>
+                                                    <option value="5">5 Osoba</option>
+                                                
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="col-sm-6">
                                             <div class="date-container2 fl-wrap">
-                                                <input type="text" placeholder="Date" id="res_date"     name="resdate"   value=""/>
+                                                <input type="text" placeholder="Datum" id="res_date"     name="resdate"   value=""/>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="fl-wrap">
                                                 <select name="restime" id="resrv-time" data-placeholder="Time" class="chosen-select no-search-select">
-                                                    <option data-display="Time">Any</option>
+                                                    <option data-display="Vrijeme">Odaberite vrijeme</option>
                                                     <option value="10:00am">10:00 am</option>
                                                     <option value="11:00am">11:00 am</option>
                                                     <option value="12:00pm">12:00 pm</option>
@@ -1173,9 +1406,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <textarea name="comments"  id="comments" cols="30" rows="3" placeholder="Your Message:"></textarea>
+                                    <textarea name="comments"  id="comments" cols="30" rows="3" placeholder="Napomena:"></textarea>
                                     <div class="clearfix"></div>
-                                    <button class="btn color-bg" id="reservation-submit">Reserve Table  <i class="fal fa-long-arrow-right"></i></button>
+                                    <button class="btn color-bg" id="reservation-submit">Potvrdi Retervaciju!  <i class="fal fa-long-arrow-right"></i></button>
                                 </fieldset>
                             </form>
                         </div>
